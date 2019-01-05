@@ -33,6 +33,21 @@ const HelloWorldIntentHandler = {
   },
 };
 
+const OrderPizzaIntentHandler = {
+  canHandle(handlerInput) {
+    return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+      && handlerInput.requestEnvelope.request.intent.name === 'OrderPizzaIntent';
+  },
+  handle(handlerInput) {
+    const speechText = 'I have ordered your pizza. It should arrive in 30 mins or less';
+
+    return handlerInput.responseBuilder
+      .speak(speechText)
+      .withSimpleCard('Order Pizza', speechText)
+      .getResponse();
+  },
+};
+
 const HelpIntentHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
@@ -96,6 +111,7 @@ exports.handler = skillBuilder
   .addRequestHandlers(
     LaunchRequestHandler,
     HelloWorldIntentHandler,
+    OrderPizzaIntentHandler,
     HelpIntentHandler,
     CancelAndStopIntentHandler,
     SessionEndedRequestHandler

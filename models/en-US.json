@@ -20,6 +20,12 @@
           "samples": [
             "hello"
           ]
+        },
+        {
+          "name": "OrderPizzaIntent",
+          "samples": [
+            "Order Pizza"
+          ]
         }
       ]
     }
