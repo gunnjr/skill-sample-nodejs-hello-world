@@ -10,7 +10,7 @@
         },
         "interactionModel": {
           "en-US": {
-            "eTag": "5f04c0a9df51926d790c58de73341a83"
+            "eTag": "2676f81e66552cb2a9e8145436825d8f"
           }
         },
         "lambda": [
@@ -23,7 +23,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-Hello-World-default",
             "handler": "index.handler",
-            "revisionId": "de56ac93-562b-487e-a6ee-326bc72b8786",
+            "revisionId": "c1d33ce6-5af8-46f3-91a0-cec22eaa9bfc",
             "runtime": "nodejs8.10"
           }
         ]

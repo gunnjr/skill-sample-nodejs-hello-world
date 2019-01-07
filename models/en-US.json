@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "hello world",
+      "invocationName": "my kitchen",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -22,9 +22,9 @@
           ]
         },
         {
-          "name": "OrderPizzaIntent",
+          "name": "FillPotIntent",
           "samples": [
-            "Order Pizza"
+            "Fill the coffee pot."
           ]
         }
       ]
