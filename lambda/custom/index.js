@@ -89,7 +89,7 @@ const FillPotIntentHandler = {
      */ 
     // Create publish parameters
     const pubParams = {
-      Message: "20",
+      Message: "26",
       Subject: `Invocation from AlexaSkill HelloWorld: FillPotIntent`,
       TopicArn: `arn:aws:sns:us-east-1:326542932491:cuppyCall`,
     };
